@@ -1,0 +1,12 @@
+/* 設定 */
+$main: #f15a24;
+$sub:  #333333;
+$bg: #ecf9ef;
+
+$bp-sp: 600px;
+$bp-tab: 820px;
+$bp-pc: 1200px;
+
+@mixin sp  { @media (max-width: $bp-sp)  { @content; } }
+@mixin tab { @media (max-width: $bp-tab) { @content; } }
+@mixin pc  { @media (max-width: $bp-pc)  { @content; } }
