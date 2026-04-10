@@ -8,14 +8,22 @@
 .bottom-deco-left {
   position: absolute;
   bottom: 0;
-  width: 60%;
+  width: 50%;
+
+  @include sp {
+    width: 80%;
+  }
 }
 
 .bottom-deco-right {
   position: absolute;
   bottom: 0;
-  width: 60%;
+  width: 50%;
   right: 0;
+
+  @include sp {
+    width: 80%;
+  }
 }
 
 
@@ -470,7 +478,7 @@
       left: auto;
       width: auto;
       transform: none;
-          margin: 0 0 60px;
+      margin: 0 0 60px;
 
     }
   }
@@ -490,16 +498,62 @@
 }
 
 /* =================================
-
+お問い合わせ
  ================================= */
 
-.aaa {
+.top-contact {
+  position: relative;
+  background: linear-gradient(to left,
+      #fff 40%,
+      #f2f2f2 40%);
 
-  &__ {}
 
-  &__ {}
+  &__inner {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 80px 40px 120px;
 
-  &__ {}
+    @include tab {
+      padding: 40px 24px 60px;
+    }
+  }
+
+  &__ttl {
+    max-width: 260px;
+    margin: 0 0 60px;
+
+    @include tab {
+      width: 200px;
+      margin: 0 0 32px;
+
+    }
+  }
+
+  &__btn-wrap {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+
+    @include tab {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+  }
+
+  &__btn-img {
+
+    @include tab{
+    max-width: 400px;
+    }
+  }
+
+  &__btn {
+
+    @include tab {
+      max-width: 240px;
+    }
+  }
 
   &__ {}
 
@@ -533,20 +587,80 @@
 }
 
 /* =================================
-
+新着情報
  ================================= */
 
-.aaa {
+.top-news {
+  position: relative;
+  background: linear-gradient(to right,
+      #fff 50%,
+      #f2f2f2 50%);
 
-  &__ {}
+  @include tab {
+    background: linear-gradient(to right,
+        #fff 100%,
+        #f2f2f2 100%);
+  }
 
-  &__ {}
 
-  &__ {}
+  &__inner {
+    background: linear-gradient(to right,
+        #fff 33%,
+        #f2f2f2 33%);
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 80px 40px 120px;
+    display: flex;
+    gap: 40px;
 
-  &__ {}
+    @include tab {
+      flex-direction: column;
+      padding: 40px 24px 60px;
+      background: linear-gradient(to right,
+          #fff 100%,
+          #f2f2f2 100%);
+    }
+  }
 
-  &__ {}
+  &__left {
+
+    width: 32%;
+  }
+
+  &__ttl {
+    max-width: 160px;
+    margin: 0 0 80px;
+
+    @include tab {
+      width: 100px;
+      margin: 0;
+
+    }
+  }
+
+  &__btn {
+    max-width: 240px;
+    display: block;
+
+
+    @include tab {
+      display: none;
+    }
+  }
+  
+  &__btn-sp {
+    display: none;
+    
+    @include tab {
+      display: block;
+      max-width: 240px;
+      margin: 0 auto;
+    }
+  }
+
+  &__right {
+    flex: 1;
+  }
 
   &__ {}
 
