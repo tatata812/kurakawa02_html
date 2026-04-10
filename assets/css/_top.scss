@@ -5,6 +5,21 @@
 /* =================================
 パーツ
  ================================= */
+.bottom-deco-left {
+  position: absolute;
+  bottom: 0;
+  width: 60%;
+}
+
+.bottom-deco-right {
+  position: absolute;
+  bottom: 0;
+  width: 60%;
+  right: 0;
+}
+
+
+
 .top-section-ttl {
   text-align: center;
   font-family: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", sans-serif;
@@ -66,18 +81,18 @@
 
   &__text-top {
     font-weight: 900;
-    font-size: 52px;
+    font-size: 60px;
 
     @include pc {
       font-size: 46px;
     }
 
-    @include tab{
+    @include tab {
       font-size: 32px;
     }
 
-    @include sp{
-    font-size: 20px;
+    @include sp {
+      font-size: 20px;
     }
   }
 
@@ -89,12 +104,473 @@
       font-size: 18px;
     }
 
-        @include sp{
-    font-size: 14px;
+    @include sp {
+      font-size: 14px;
     }
   }
 
   &__img {}
 
   &__ {}
+}
+
+/* =================================
+会社概要
+ ================================= */
+
+.top-about {
+  background-color: $bg;
+  position: relative;
+
+  &__inner {
+    background-color: #fff;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 80px 40px 120px;
+
+    @include tab {
+      padding: 40px 24px 60px;
+    }
+
+  }
+
+  &__flex {
+    display: flex;
+    gap: 40px;
+    margin: 0 0 100px;
+
+    @include tab {
+      margin: 0 0 60px;
+    }
+  }
+
+  &__left {
+    width: 52%;
+
+    @include tab {
+      width: 100%;
+    }
+  }
+
+  &__ttl {
+    max-width: 260px;
+    margin: 0 0 60px;
+
+    @include tab {
+      margin: 0 0 32px;
+      max-width: 200px;
+
+    }
+  }
+
+  &__text {
+    margin: 0 0 32px;
+  }
+
+  &__btn {
+    max-width: 240px;
+    display: block;
+
+    @include tab {
+      margin: 0 auto;
+    }
+  }
+
+  &__right {
+    flex: 1;
+    transform: translate(80px, -40px)scale(1.2);
+
+    @include pc {
+      transform: translate(0)scale(1);
+    }
+
+    @include tab {
+      display: none;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    gap: 40px;
+    padding: 0 24px;
+
+    @include tab {
+      flex-direction: column;
+      padding: 0;
+      gap: 24px;
+      align-items: center;
+
+    }
+  }
+
+  &__card {
+    display: block;
+    width: calc((100% - 80px) / 3);
+    text-decoration: none;
+    color: $sub;
+    transition: opacity 0.3s;
+
+    @include tab {
+      max-width: 320px;
+      width: 100%;
+    }
+  }
+
+
+  &__card-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+  }
+
+  &__card-title {
+    line-height: 1.4;
+  }
+
+  /* ===== 矢印（疑似要素） ===== */
+  &__card-arrow {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-left: 16px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  &__card-arrow::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../img/top/icon-arrow.png") no-repeat center / contain;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* 初期位置（左に8px待機） */
+  &__card-arrow::after {
+    transform: translateX(-4px);
+  }
+
+  /* hover時 */
+  &__card:hover &__card-arrow::before {
+    transform: translateX(4px);
+  }
+
+  &__card:hover &__card-arrow::after {
+    transform: translateX(0);
+  }
+
+
+
+}
+
+/* =================================
+事業概要
+ ================================= */
+
+.top-overview {
+  background-color: #fff;
+  position: relative;
+
+  &__inner {
+    background-color: $bg;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 80px 40px 120px;
+
+    @include tab {
+      padding: 40px 24px 60px;
+    }
+
+  }
+
+  &__ttl-wrap {
+    display: flex;
+    margin: 0 0 80px;
+
+    @include tab {
+      flex-direction: column;
+      gap: 24px;
+      margin: 0 0 60px;
+
+    }
+  }
+
+  &__ttl-right {
+    width: 40%;
+
+    @include tab {
+      width: 100%;
+    }
+  }
+
+  &__ttl {
+    max-width: 260px;
+
+    @include tab {
+      width: 200px;
+    }
+  }
+
+  &__ttl-text {
+    flex: 1;
+  }
+
+  &__content {
+    margin: 0 0 100px;
+
+    @include tab {
+      margin: 0 0 60px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    gap: 24px;
+    margin: 0 0 60px;
+
+    @include tab {
+      flex-direction: column-reverse;
+    }
+
+    &--top {
+      transform: translateX(-120px);
+
+      @include pc {
+        transform: translateX(0);
+      }
+    }
+
+    &--bottom {
+      transform: translateX(120px);
+
+      @include pc {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &__item-img {
+    width: 50%;
+
+    @include tab {
+      width: 100%;
+    }
+  }
+
+  &__item-text {
+    flex: 1;
+  }
+
+  &__item-ttl {
+    border-left: $main 3px solid;
+    padding: 4px 0 4px 16px;
+    color: #767676;
+    font-size: 20px;
+    margin: 0 0 24px;
+
+    @include tab {
+      margin: 0 0 12px;
+    }
+  }
+
+  &__btn {
+    max-width: 240px;
+    display: block;
+    margin: 0 0 0 auto;
+
+
+    @include tab {
+      margin: 0 auto;
+    }
+  }
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+/* =================================
+施工実績
+ ================================= */
+
+.top-projects {
+  background-color: $bg;
+  position: relative;
+
+  &__inner {
+    background-color: #fff;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 80px 40px 120px;
+
+    @include tab {
+      padding: 40px 24px 60px;
+    }
+
+  }
+
+  &__ttl-wrap {
+    display: flex;
+    margin: 0 0 80px;
+
+    @include tab {
+      flex-direction: column;
+      gap: 24px;
+      margin: 0 0 60px;
+
+    }
+  }
+
+  &__ttl-right {
+    width: 60%;
+
+    @include tab {
+      width: 100%;
+    }
+  }
+
+  &__ttl {
+    max-width: 480px;
+
+    @include tab {
+      width: 300px;
+    }
+  }
+
+  &__ttl-text {
+    flex: 1;
+  }
+
+  &__content {
+    position: relative;
+    left: 50%;
+    width: 1160px;
+    transform: translateX(-50%);
+    margin: 0 0 80px;
+
+    @media screen and (max-width: 1210px) {
+      position: static;
+      left: auto;
+      width: auto;
+      transform: none;
+          margin: 0 0 60px;
+
+    }
+  }
+
+  &__btn {
+    max-width: 240px;
+    display: block;
+    margin: 0 auto;
+
+
+    @include tab {
+      margin: 0 auto;
+    }
+  }
+
+
+}
+
+/* =================================
+
+ ================================= */
+
+.aaa {
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+/* =================================
+
+ ================================= */
+
+.aaa {
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
 }
