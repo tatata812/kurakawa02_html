@@ -854,8 +854,7 @@ footer
   @include tab {
     padding: 0;
     gap: 28px 10px;
-    align-items: center;
-
+        align-items: flex-start;
   }
 
 

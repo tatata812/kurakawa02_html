@@ -134,7 +134,7 @@
     background-color: #fff;
     max-width: 980px;
     margin: 0 auto;
-    padding: 80px 40px 120px;
+    padding: 80px 40px 100px;
 
     @include tab {
       padding: 40px 24px 60px;
@@ -284,10 +284,10 @@
     background-color: $bg;
     max-width: 980px;
     margin: 0 auto;
-    padding: 80px 40px 120px;
+    padding: 80px 40px 100px;
 
     @include tab {
-      padding: 40px 24px 60px;
+      padding: 40px 24px 80px;
     }
 
   }
@@ -426,10 +426,10 @@
     background-color: #fff;
     max-width: 980px;
     margin: 0 auto;
-    padding: 80px 40px 120px;
+    padding: 80px 40px 100px;
 
     @include tab {
-      padding: 40px 24px 60px;
+      padding: 40px 24px 80px;
     }
 
   }
@@ -511,10 +511,10 @@
   &__inner {
     max-width: 980px;
     margin: 0 auto;
-    padding: 80px 40px 120px;
+    padding: 80px 40px 100px;
 
     @include tab {
-      padding: 40px 24px 60px;
+      padding: 40px 24px 80px;
     }
   }
 
@@ -543,8 +543,8 @@
 
   &__btn-img {
 
-    @include tab{
-    max-width: 400px;
+    @include tab {
+      max-width: 400px;
     }
   }
 
@@ -609,13 +609,14 @@
         #f2f2f2 33%);
     max-width: 980px;
     margin: 0 auto;
-    padding: 80px 40px 120px;
+    padding: 80px 40px 100px;
     display: flex;
     gap: 40px;
 
     @include tab {
+      gap: 24px;
       flex-direction: column;
-      padding: 40px 24px 60px;
+      padding: 40px 24px 80px;
       background: linear-gradient(to right,
           #fff 100%,
           #f2f2f2 100%);
@@ -647,10 +648,10 @@
       display: none;
     }
   }
-  
+
   &__btn-sp {
     display: none;
-    
+
     @include tab {
       display: block;
       max-width: 240px;
