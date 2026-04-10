@@ -2796,7 +2796,7 @@ header
   right: 0;
   width: min(360px, 86vw);
   height: calc(100vh - 60px);
-  background: #fff;
+  background: #333333;
   transform: translateX(100%);
   transition: transform 0.3s ease;
   z-index: 1100;
@@ -2827,7 +2827,7 @@ header
 }
 .sp-menu__link {
   display: block;
-  color: #222;
+  color: #fff;
   text-decoration: none;
   font-weight: 700;
 }
