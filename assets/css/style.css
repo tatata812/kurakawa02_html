@@ -561,6 +561,76 @@
 .top-news__right {
   flex: 1;
 }
+/* =================================
+採用情報
+ ================================= */
+.top-recruit {
+  background: #f2f2f2;
+  padding: 60px 0 100px;
+}
+@media (max-width: 820px) {
+  .top-recruit {
+    padding: 40px 0;
+  }
+}
+.top-recruit__inner {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.top-recruit__ttl {
+  max-width: 220px;
+  margin: 0 0 60px;
+  padding: 0 24px;
+}
+@media (max-width: 820px) {
+  .top-recruit__ttl {
+    width: 160px;
+    margin: 0 0 40px;
+  }
+}
+.top-recruit__content {
+  background-color: #333333;
+  display: flex;
+}
+@media (max-width: 600px) {
+  .top-recruit__content {
+    flex-direction: column;
+    margin: 0 0 40px;
+  }
+}
+.top-recruit__text-wrap {
+  position: relative;
+  width: 600px;
+}
+@media (max-width: 600px) {
+  .top-recruit__text-wrap {
+    height: 100px;
+    width: 100%;
+  }
+}
+.top-recruit__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  width: 80%;
+}
+@media (max-width: 600px) {
+  .top-recruit__btn {
+    display: none;
+  }
+}
+.top-recruit__btn-sp {
+  display: none;
+}
+@media (max-width: 600px) {
+  .top-recruit__btn-sp {
+    display: block;
+    max-width: 240px;
+    margin: 0 auto;
+  }
+}
 /* 下層ページスタイルシート */
 /* =================================
 下層ページ共通
