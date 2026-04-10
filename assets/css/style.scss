@@ -371,72 +371,129 @@ body.is-sp-menu-open {
 /* =================================
 footer
  ================================= */
-
 .site-footer {
-  background: #f7f7f7;
-  margin-top: 80px;
+  padding: 52px 24px 48px;
+  background: $sub;
+  color: #fff;
+
+  @include tab {
+    padding: 40px 24px;
+  }
 
   &__inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 48px 24px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    gap: 80px;
+    max-width: 980px;
+    margin: 0 auto;
 
-    @include tab {
-      flex-direction: column;
-      gap: 32px;
-    }
-  }
-
-  /* ロゴ */
-  &__logo {
-    font-size: 18px;
-    font-weight: 700;
-
-    a {
-      color: #222;
-      text-decoration: none;
-    }
-
-
-  }
-
-  /* ナビ */
-  &__nav-list {
-    display: flex;
+    @include pc{
     gap: 32px;
+    align-items: center;
+    }
 
     @include tab {
       flex-direction: column;
-      gap: 16px;
+      gap: 20px;
     }
 
-    a {
-      color: #222;
-      text-decoration: none;
-      font-weight: 600;
+  }
 
-      &:hover {
-        opacity: 0.7;
-      }
+  &__company {
+    width: 320px;
+  }
+
+  &__logo {
+    display: block;
+    max-width: 280px;
+    margin: 0 0 32px;
+
+    @include tab {
+    margin: 0 0 24px;
     }
   }
 
-  /* 下部 */
-  &__bottom {
-    border-top: 1px solid #e5e5e5;
-    padding: 16px 24px;
+  &__address {
+    margin: 0 0 32px;
+
+    @include tab {
+    margin: 0 0 24px;
+    }
   }
 
   &__copyright {
-    text-align: center;
-    font-size: 12px;
-    color: #666;
+    color: #ff6222;
+    font-size: 13px;
+
+    @include tab{
+      display: none;
+    
+    }
+  }
+
+    &__copyright-sp {
+    color: #ff6222;
+    font-size: 13px;
+    display: none;
+
+    @include tab{
+    display: block;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    gap: 48px;
+    padding: 43px 0 0;
+
+    @include tab {
+      flex-wrap: wrap;
+      gap: 40px 20px;
+      padding-top: 0;
+    }
+  }
+
+  &__nav-column {
+    min-width: max-content;
+
+    @include tab{
+    width: calc((100% - 20px) / 2);
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    @include sp {
+      gap: 4px;
+    }
+  }
+
+
+  &__nav-link {
+    display: inline-block;
+    color: #fff;
+
+    @include tab{
+    font-size: 13px;
+    }
+
+    &--child {
+      color: #ff6222;
+      position: relative;
+      margin: 0 0 0 12px;
+
+      &::before {
+        content: "–";
+        position: absolute;
+        top: 0;
+        left: -1em;
+      }
+    }
   }
 }
-
 
 
 
@@ -854,7 +911,7 @@ footer
   @include tab {
     padding: 0;
     gap: 28px 10px;
-        align-items: flex-start;
+    align-items: flex-start;
   }
 
 
