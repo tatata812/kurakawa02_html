@@ -569,19 +569,19 @@ footer
 
 // 少し遅らせる
 .fade-delay-2 {
-  transition-delay: 0.2s;
-}
-
-.fade-delay-3 {
-  transition-delay: 0.3s;
-}
-
-.fade-delay-4 {
   transition-delay: 0.4s;
 }
 
+.fade-delay-3 {
+  transition-delay: 0.7s;
+}
+
+.fade-delay-4 {
+  transition-delay: 1.0s;
+}
+
 .fade-delay-5 {
-  transition-delay: 0.5s;
+  transition-delay: 1.3s;
 }
 
 /* ------------------------------

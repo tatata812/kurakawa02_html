@@ -578,7 +578,7 @@
   margin: 0 auto;
 }
 .top-recruit__ttl {
-  max-width: 220px;
+  max-width: 240px;
   margin: 0 0 60px;
   padding: 0 24px;
 }
@@ -3051,19 +3051,19 @@ footer
 }
 
 .fade-delay-2 {
-  transition-delay: 0.2s;
-}
-
-.fade-delay-3 {
-  transition-delay: 0.3s;
-}
-
-.fade-delay-4 {
   transition-delay: 0.4s;
 }
 
+.fade-delay-3 {
+  transition-delay: 0.7s;
+}
+
+.fade-delay-4 {
+  transition-delay: 1s;
+}
+
 .fade-delay-5 {
-  transition-delay: 0.5s;
+  transition-delay: 1.3s;
 }
 
 /* ------------------------------
