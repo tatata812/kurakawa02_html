@@ -15,14 +15,17 @@
 body {
   line-height: 1.8;
   color: #333333;
-  font-family: -apple-system, BlinkMacSystemFont,
-    "Hiragino Kaku Gothic ProN", "Hiragino Sans",
-    "Meiryo", "Yu Gothic", "YuGothic",
+  font-family: "Noto Sans",
+    -apple-system, BlinkMacSystemFont,
+    "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+    "Yu Gothic", "YuGothic",
+    "Meiryo",
     sans-serif;
-  font-family: "Noto Sans", sans-serif;
   font-size: 15px;
 
-
+  @include tab {
+    font-size: 13px;
+  }
 }
 
 p {
@@ -53,10 +56,18 @@ ol,
 li {
   list-style: none;
   font-size: 15px;
+
+  @include tab {
+    font-size: 13px;
+  }
 }
 
 table {
   font-size: 15px;
+
+  @include tab {
+    font-size: 13px;
+  }
 }
 
 dd,
@@ -104,9 +115,6 @@ dt {
 .breadcrumbs-wrap {
   background-color: $bg;
 
-  &--white {
-    background-color: #fff;
-  }
 
   &__content {
     max-width: 1240px;
@@ -387,9 +395,9 @@ footer
     max-width: 980px;
     margin: 0 auto;
 
-    @include pc{
-    gap: 32px;
-    align-items: center;
+    @include pc {
+      gap: 32px;
+      align-items: center;
     }
 
     @include tab {
@@ -409,7 +417,7 @@ footer
     margin: 0 0 32px;
 
     @include tab {
-    margin: 0 0 24px;
+      margin: 0 0 24px;
     }
   }
 
@@ -417,7 +425,7 @@ footer
     margin: 0 0 32px;
 
     @include tab {
-    margin: 0 0 24px;
+      margin: 0 0 24px;
     }
   }
 
@@ -425,19 +433,19 @@ footer
     color: #ff6222;
     font-size: 13px;
 
-    @include tab{
+    @include tab {
       display: none;
-    
+
     }
   }
 
-    &__copyright-sp {
+  &__copyright-sp {
     color: #ff6222;
     font-size: 13px;
     display: none;
 
-    @include tab{
-    display: block;
+    @include tab {
+      display: block;
     }
   }
 
@@ -456,8 +464,8 @@ footer
   &__nav-column {
     min-width: max-content;
 
-    @include tab{
-    width: calc((100% - 20px) / 2);
+    @include tab {
+      width: calc((100% - 20px) / 2);
     }
   }
 
@@ -476,8 +484,8 @@ footer
     display: inline-block;
     color: #fff;
 
-    @include tab{
-    font-size: 13px;
+    @include tab {
+      font-size: 13px;
     }
 
     &--child {
@@ -494,8 +502,6 @@ footer
     }
   }
 }
-
-
 
 
 
@@ -597,7 +603,6 @@ footer
 .fade-slow {
   transition-duration: 0.8s, 1.1s;
 }
-
 
 
 
@@ -896,12 +901,11 @@ footer
 
 
 
-
 /* =========================
    共通パーツ
 ========================= */
 
-// 事業案内の記事一覧
+/*  事業案内の記事一覧*/
 .projects-cards {
   display: flex;
   gap: 60px 32px;
@@ -913,7 +917,6 @@ footer
     gap: 28px 10px;
     align-items: flex-start;
   }
-
 
   &__card {
     display: block;
@@ -955,7 +958,6 @@ footer
     line-height: 1.4;
   }
 
-  /* ===== 矢印（疑似要素） ===== */
   &__card-arrow {
     position: relative;
     width: 20px;
@@ -972,12 +974,10 @@ footer
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  /* 初期位置（左に8px待機） */
   &__card-arrow::after {
     transform: translateX(-4px);
   }
 
-  /* hover時 */
   &__card:hover &__card-arrow::before {
     transform: translateX(4px);
   }
@@ -988,9 +988,8 @@ footer
 }
 
 
-// お知らせ一覧
+/* お知らせ一覧 */
 .news-cards {
-
 
   &__item {
     position: relative;
@@ -1026,7 +1025,6 @@ footer
     flex-shrink: 0;
     background-color: #fff;
     font-size: 14px;
-
   }
 
   &__title {
@@ -1037,7 +1035,6 @@ footer
       flex: none;
       width: 100%;
     }
-
   }
 
   &__arrow {
@@ -1061,7 +1058,7 @@ footer
 
 }
 
-// 画像のボタン
+/* 画像ボタンの動き */
 .btn-img {
   display: block;
   max-width: 280px;
