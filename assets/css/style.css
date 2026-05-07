@@ -841,28 +841,351 @@
   font-weight: 600;
 }
 /* =================================
-
+施工事例
  ================================= */
+.page-projects {
+  background-color: #f2f2f2;
+  position: relative;
+}
+.page-projects__inner {
+  background-color: #fff;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 80px 40px 100px;
+}
+@media (max-width: 820px) {
+  .page-projects__inner {
+    padding: 40px 24px 60px;
+  }
+}
+.page-projects__ttl {
+  width: 460px;
+}
+@media (max-width: 1200px) {
+  .page-projects__ttl {
+    width: 300px;
+  }
+}
+@media (max-width: 600px) {
+  .page-projects__ttl {
+    width: 220px;
+  }
+}
+.page-projects__lead {
+  max-width: 600px;
+  margin: 0 auto 60px;
+}
+@media (max-width: 820px) {
+  .page-projects__lead {
+    margin: 0 auto 24px;
+  }
+}
+.page-projects__tab-list {
+  display: flex;
+  max-width: 680px;
+  margin: 0 auto 60px;
+}
+@media (max-width: 600px) {
+  .page-projects__tab-list {
+    flex-wrap: wrap;
+    margin: 0 auto 32px;
+  }
+}
+.page-projects__tab-item {
+  position: relative;
+  width: 25%;
+  border: 1px solid #333;
+  border-left: none;
+  background: #fff;
+}
+.page-projects__tab-item:first-child {
+  border-left: 1px solid #333;
+}
+@media (max-width: 600px) {
+  .page-projects__tab-item {
+    width: 50%;
+  }
+  .page-projects__tab-item:nth-child(odd) {
+    border-left: 1px solid #333;
+  }
+  .page-projects__tab-item:nth-child(n+3) {
+    border-top: none;
+  }
+}
+.page-projects__tab-item.active {
+  background: #303030;
+}
+.page-projects__tab-item.active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -9px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 9px 0 9px;
+  border-color: #303030 transparent transparent transparent;
+}
+.page-projects__tab-item.active .page-projects__tab-link {
+  color: #f15a24;
+}
+.page-projects__tab-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: #f15a24;
+}
+@media (max-width: 600px) {
+  .page-projects__tab-link {
+    font-size: 13px;
+  }
+}
+.page-projects__content {
+  position: relative;
+  left: 50%;
+  width: 1160px;
+  transform: translateX(-50%);
+  margin: 0 0 80px;
+}
+@media screen and (max-width: 1210px) {
+  .page-projects__content {
+    position: static;
+    left: auto;
+    width: auto;
+    transform: none;
+    margin: 0 0 60px;
+  }
+}
+/* =================================
+お問い合わせ
+ ================================= */
+.page-contact {
+  background-color: #f2f2f2;
+  position: relative;
+  padding: 0 0 120px;
+}
+@media (max-width: 820px) {
+  .page-contact {
+    padding: 0 0 40px;
+  }
+}
+.page-contact__ttl {
+  width: 240px;
+}
+@media (max-width: 1200px) {
+  .page-contact__ttl {
+    width: 160px;
+  }
+}
+@media (max-width: 600px) {
+  .page-contact__ttl {
+    width: 100px;
+  }
+}
+.page-contact__content {
+  max-width: 920px;
+  margin: 60px auto 0;
+  padding: 80px 120px;
+  background: #fff;
+}
+@media (max-width: 1200px) {
+  .page-contact__content {
+    margin: 40px auto 0;
+    padding: 40px 12px;
+  }
+}
+@media (max-width: 820px) {
+  .page-contact__content {
+    margin: 12px 12px;
+    padding: 24px 12px;
+  }
+}
+.page-contact__text {
+  margin: 0 0 60px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .page-contact__text {
+    margin: 0 0 40px;
+  }
+}
+.page-contact__item {
+  margin: 0 0 32px;
+}
+@media (max-width: 600px) {
+  .page-contact__item {
+    margin: 0 0 24px;
+  }
+}
+.page-contact__head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0 0 8px;
+}
+.page-contact__required {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  color: #fff;
+  line-height: 1;
+  background: #ff2b2b;
+  border-radius: 2px;
+  font-size: 14px;
+}
+.page-contact__input, .page-contact__textarea {
+  width: 100%;
+  border: 1px solid #c9c9c9;
+  border-radius: 4px;
+  background: #fff;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-size: 16px;
+}
+.page-contact__input::-moz-placeholder, .page-contact__textarea::-moz-placeholder {
+  color: #c9c9c9;
+}
+.page-contact__input::placeholder, .page-contact__textarea::placeholder {
+  color: #c9c9c9;
+}
+.page-contact__input {
+  padding: 16px;
+}
+@media (max-width: 820px) {
+  .page-contact__input {
+    padding: 8px;
+  }
+}
+.page-contact__textarea {
+  min-height: 260px;
+  padding: 24px 28px;
+  resize: vertical;
+}
+@media (max-width: 600px) {
+  .page-contact__textarea {
+    min-height: 220px;
+    padding: 20px;
+  }
+}
+.page-contact__privacy {
+  margin: 0 0 40px;
+}
+@media (max-width: 600px) {
+  .page-contact__privacy {
+    margin: 0 0 24px;
+  }
+}
+.page-contact__privacy-text {
+  margin: 0 0 32px;
+  line-height: 2;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .page-contact__privacy-text {
+    text-align: left;
+    margin: 0 0 24px;
+  }
+}
+.page-contact__privacy-link {
+  color: #ff5a1f;
+  text-decoration: none;
+  text-decoration: underline;
+}
+.page-contact__check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.page-contact__check-input {
+  width: 24px;
+  height: 24px;
+  accent-color: #2ab56f;
+  cursor: pointer;
+}
+.page-contact__check-text {
+  color: #2ab56f;
+}
+.page-contact__submit {
+  text-align: center;
+}
+.page-contact__submit-btn {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.page-contact__submit-btn:hover {
+  opacity: 0.7;
+}
+.page-contact__submit-btn img {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+}
+@media (max-width: 820px) {
+  .page-contact__submit-btn img {
+    width: 240px;
+  }
+}
+/* =================================
+新着情報
+ ================================= */
+.page-news {
+  background-color: #f2f2f2;
+  position: relative;
+}
+.page-news__inner {
+  background-color: #fff;
+  max-width: 980px;
+  margin: 24px auto 0;
+  padding: 120px 120px 100px;
+}
+@media (max-width: 820px) {
+  .page-news__inner {
+    padding: 40px 16px 60px;
+    margin: 0 12px 0;
+  }
+}
+.page-news__ttl {
+  width: 140px;
+}
+@media (max-width: 1200px) {
+  .page-news__ttl {
+    width: 100px;
+  }
+}
+@media (max-width: 600px) {
+  .page-news__ttl {
+    width: 60px;
+  }
+}
+.page-news__content {
+  margin: 0 0 80px;
+}
+@media (max-width: 820px) {
+  .page-news__content {
+    margin: 0 0 48px;
+  }
+}
 /* =================================
 
  ================================= */
 /* =================================
-
+会社概要
  ================================= */
 /* =================================
-
+採用情報
  ================================= */
 /* =================================
-
- ================================= */
-/* =================================
-
- ================================= */
-/* =================================
-
- ================================= */
-/* =================================
-
+施工実績
  ================================= */
 /* サイト全体スタイルシート */
 /* =========================
@@ -981,6 +1304,13 @@ dt {
   .breadcrumbs-wrap__content {
     padding: 4px 12px;
   }
+}
+
+/* =========================
+   ページャー
+========================= */
+.pager-wrap {
+  text-align: center;
 }
 
 /* =================================
@@ -1796,6 +2126,14 @@ footer
     padding: 0 18px 0 0;
   }
 }
+.news-cards__item--sub {
+  margin: 0 0 24px;
+}
+@media (max-width: 600px) {
+  .news-cards__item--sub {
+    margin: 0 0 20px;
+  }
+}
 .news-cards__link:hover {
   background: #f7f7f7;
 }
@@ -1809,6 +2147,11 @@ footer
   flex-shrink: 0;
   background-color: #fff;
   font-size: 14px;
+}
+@media (max-width: 600px) {
+  .news-cards__cat {
+    padding: 0 8px;
+  }
 }
 .news-cards__title {
   flex: 1;

@@ -6,7 +6,6 @@
 /* =================================
 下層ページ共通
  ================================= */
-
 .sub-page {
 
   &__top {
@@ -26,9 +25,7 @@
     @include tab {
       top: 50%;
       left: 12px;
-
     }
-
   }
 
   &__ {}
@@ -62,7 +59,6 @@
   &__ {}
 
   &__ {}
-
 
 }
 
@@ -103,7 +99,6 @@
     &:last-of-type {
       margin: 0 0 60px;
     }
-
   }
 
   &__section-bg {
@@ -298,12 +293,353 @@
 }
 
 /* =================================
-
+施工事例
  ================================= */
 
-.aaa {
+.page-projects {
+  background-color: $bg;
+  position: relative;
+
+  &__inner {
+    background-color: #fff;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 80px 40px 100px;
+
+    @include tab {
+      padding: 40px 24px 60px;
+    }
+
+  }
+
+  &__ttl {
+    width: 460px;
+
+    @include pc {
+      width: 300px;
+    }
+
+    @include sp {
+      width: 220px;
+    }
+  }
+
+
+  &__lead {
+    max-width: 600px;
+    margin: 0 auto 60px;
+
+    @include tab {
+      margin: 0 auto 24px;
+    }
+  }
+
+
+  &__tab-list {
+    display: flex;
+    max-width: 680px;
+    margin: 0 auto 60px;
+
+    @include sp {
+      flex-wrap: wrap;
+      margin: 0 auto 32px;
+
+    }
+  }
+
+  &__tab-item {
+    position: relative;
+    width: 25%;
+    border: 1px solid #333;
+    border-left: none;
+    background: #fff;
+
+    &:first-child {
+      border-left: 1px solid #333;
+    }
+
+    @include sp {
+      width: 50%;
+
+      &:nth-child(odd) {
+        border-left: 1px solid #333;
+      }
+
+      &:nth-child(n + 3) {
+        border-top: none;
+      }
+    }
+
+    &.active {
+      background: #303030;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -9px;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 9px 9px 0 9px;
+        border-color: #303030 transparent transparent transparent;
+      }
+
+      .page-projects__tab-link {
+        color: $main;
+      }
+    }
+  }
+
+  &__tab-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: $main;
+
+    @include sp {
+      font-size: 13px;
+    }
+  }
+
+  &__content {
+    position: relative;
+    left: 50%;
+    width: 1160px;
+    transform: translateX(-50%);
+    margin: 0 0 80px;
+
+    @media screen and (max-width: 1210px) {
+      position: static;
+      left: auto;
+      width: auto;
+      transform: none;
+      margin: 0 0 60px;
+
+    }
+  }
+
 
   &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+/* =================================
+お問い合わせ
+ ================================= */
+
+.page-contact {
+  background-color: $bg;
+  position: relative;
+  padding: 0 0 120px;
+
+  @include tab {
+    padding: 0 0 40px;
+  }
+
+  &__ttl {
+    width: 240px;
+
+    @include pc {
+      width: 160px;
+    }
+
+    @include sp {
+      width: 100px;
+    }
+  }
+
+
+  &__content {
+    max-width: 920px;
+    margin: 60px auto 0;
+    padding: 80px 120px;
+    background: #fff;
+
+    @include pc {
+      margin: 40px auto 0;
+      padding: 40px 12px;
+    }
+
+    @include tab {
+      margin: 12px 12px;
+      padding: 24px 12px;
+
+    }
+  }
+
+  &__text {
+    margin: 0 0 60px;
+    text-align: center;
+
+    @include sp {
+      margin: 0 0 40px;
+    }
+  }
+
+
+  &__item {
+    margin: 0 0 32px;
+
+    @include sp {
+      margin: 0 0 24px;
+    }
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0 0 8px;
+  }
+
+
+  &__required {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+    color: #fff;
+    line-height: 1;
+    background: #ff2b2b;
+    border-radius: 2px;
+    font-size: 14px;
+  }
+
+  &__input,
+  &__textarea {
+    width: 100%;
+    border: 1px solid #c9c9c9;
+    border-radius: 4px;
+    background: #fff;
+    appearance: none;
+    font-size: 16px;
+
+    &::placeholder {
+      color: #c9c9c9;
+    }
+  }
+
+  &__input {
+    padding: 16px;
+
+    @include tab {
+      padding: 8px;
+    }
+  }
+
+  &__textarea {
+    min-height: 260px;
+    padding: 24px 28px;
+    resize: vertical;
+
+    @include sp {
+      min-height: 220px;
+      padding: 20px;
+    }
+  }
+
+  &__privacy {
+    margin: 0 0 40px;
+
+    @include sp {
+      margin: 0 0 24px;
+    }
+  }
+
+  &__privacy-text {
+    margin: 0 0 32px;
+    line-height: 2;
+    text-align: center;
+
+    @include sp {
+      text-align: left;
+      margin: 0 0 24px;
+
+    }
+  }
+
+  &__privacy-link {
+    color: #ff5a1f;
+    text-decoration: none;
+    text-decoration: underline;
+  }
+
+  &__check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+  }
+
+  &__check-input {
+    width: 24px;
+    height: 24px;
+    accent-color: #2ab56f;
+    cursor: pointer;
+  }
+
+  &__check-text {
+    color: #2ab56f;
+  }
+
+  &__submit {
+    text-align: center;
+  }
+
+  &__submit-btn {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 320px;
+
+      @include tab {
+        width: 240px;
+      }
+    }
+  }
+
 
   &__ {}
 
@@ -340,101 +676,49 @@
 
 }
 
-/* =================================
 
- ================================= */
-
-.aaa {
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
-}
 
 /* =================================
-
+新着情報
  ================================= */
 
-.aaa {
+.page-news {
+  background-color: $bg;
+  position: relative;
 
-  &__ {}
+  &__inner {
+    background-color: #fff;
+    max-width: 980px;
+    margin: 24px auto 0;
+    padding: 120px 120px 100px;
 
-  &__ {}
+    @include tab {
+      padding: 40px 16px 60px;
+      margin: 0 12px 0;
+    }
 
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
+  }
 
 
-}
+  &__ttl {
+    width: 140px;
 
-/* =================================
+    @include pc {
+      width: 100px;
+    }
 
- ================================= */
+    @include sp {
+      width: 60px;
+    }
+  }
 
-.aaa {
+  &__content {
+    margin: 0 0 80px;
 
-  &__ {}
-
-  &__ {}
+    @include tab{
+    margin: 0 0 48px;
+    }
+  }
 
   &__ {}
 

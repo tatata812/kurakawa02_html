@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="email=no,telephone=no,address=no">
-  <title>会社概要</title>
+  <title>施工実績</title>
   <meta name="description" content="<?php echo $des; ?>">
   <meta property="og:type" content="website">
   <meta property="og:title"
@@ -83,9 +83,99 @@
   </nav>
   <div class="sp-menu__overlay" aria-hidden="true"></div>
 
-  <div class="main page-about">
+  <div class="main page-contact">
+    <div class="sub-page__top">
+      <img src="assets/img/subpage/contact-top.jpg" class="pc-block">
+      <img src="assets/img/subpage/contact-top-sp.jpg" class="sp-block">
+      <h1 class="sub-page__ttl page-contact__ttl"><img src="assets/img/top/top-contact-ttl.png" alt="事業概要"></h1>
+      <img src="assets/img/top/bottom-deco-left.png" class="bottom-deco-left">
+    </div>
+    <div class="breadcrumbs-wrap">
+      <div class="breadcrumbs-wrap__content">
+        トップ ＞ ○○○○ ＞ ○○○○
+      </div>
+    </div>
 
+    <div class="page-contact__content">
+      <p class="page-contact__text">
+        下記フォームにてお気軽にお問い合わせください。
+      </p>
 
+      <form action="/" method="post" class="page-contact__form">
+
+        <div class="page-contact__item">
+          <div class="page-contact__head">
+            <label class="page-contact__label">氏名</label>
+            <span class="page-contact__required">必須</span>
+          </div>
+
+          <input type="text" name="name" placeholder="山田 太郎" class="page-contact__input">
+        </div>
+
+        <div class="page-contact__item">
+          <div class="page-contact__head">
+            <label class="page-contact__label">フリガナ</label>
+            <span class="page-contact__required">必須</span>
+          </div>
+
+          <input type="text" name="kana" placeholder="ヤマダ タロウ" class="page-contact__input">
+        </div>
+
+        <div class="page-contact__item">
+          <div class="page-contact__head">
+            <label class="page-contact__label">メールアドレス</label>
+            <span class="page-contact__required">必須</span>
+          </div>
+
+          <input type="email" name="email" placeholder="example@email.com" class="page-contact__input">
+        </div>
+
+        <div class="page-contact__item">
+          <div class="page-contact__head">
+            <label class="page-contact__label">会社名</label>
+          </div>
+
+          <input type="text" name="company" placeholder="株式会社サンプル" class="page-contact__input">
+        </div>
+
+        <div class="page-contact__item">
+          <div class="page-contact__head">
+            <label class="page-contact__label">電話番号</label>
+          </div>
+
+          <input type="tel" name="tel" placeholder="012-345-6789" class="page-contact__input">
+        </div>
+
+        <div class="page-contact__item">
+          <div class="page-contact__head">
+            <label class="page-contact__label">お問い合わせ内容</label>
+          </div>
+
+          <textarea name="message" placeholder="お問い合わせ内容を記入してください" class="page-contact__textarea"></textarea>
+        </div>
+
+        <div class="page-contact__privacy">
+          <p class="page-contact__privacy-text">
+            <a href="#" class="page-contact__privacy-link">
+              個人情報保護方針
+            </a>
+            をご確認の上、「同意する」にチェックを入れてください。
+          </p>
+
+          <label class="page-contact__check">
+            <input type="checkbox" name="privacy" class="page-contact__check-input">
+            <span class="page-contact__check-text">同意する</span>
+          </label>
+        </div>
+
+        <div class="page-contact__submit">
+          <button type="submit" class="page-contact__submit-btn">
+            <img src="assets/img/subpage/contact-btn.png" alt="送信する">
+          </button>
+        </div>
+
+      </form>
+    </div>
   </div>
   <!--main end-->
 

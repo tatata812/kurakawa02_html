@@ -121,10 +121,17 @@ dt {
     padding: 4px 12px 4px 40px;
     font-size: 11px;
 
-    @include tab{
-    padding: 4px 12px;
+    @include tab {
+      padding: 4px 12px;
     }
   }
+}
+
+/* =========================
+   ページャー
+========================= */
+.pager-wrap {
+  text-align: center;
 }
 
 
@@ -1018,6 +1025,14 @@ footer
       margin: 0 0 24px;
       padding: 0 18px 0 0;
     }
+
+    &--sub {
+      margin: 0 0 24px;
+
+      @include sp{
+      margin: 0 0 20px;
+      }
+    }
   }
 
   &__link:hover {
@@ -1035,6 +1050,10 @@ footer
     flex-shrink: 0;
     background-color: #fff;
     font-size: 14px;
+
+    @include sp{
+    padding: 0 8px;
+    }
   }
 
   &__title {
