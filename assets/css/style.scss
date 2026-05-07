@@ -1,6 +1,7 @@
 @use "config"as *;
 @use "top";
 @use "subpage";
+@use "maki";
 
 /* サイト全体スタイルシート */
 
@@ -117,10 +118,12 @@ dt {
 
 
   &__content {
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 12px 12px 0;
+    padding: 4px 12px 4px 40px;
     font-size: 11px;
+
+    @include tab{
+    padding: 4px 12px;
+    }
   }
 }
 
@@ -383,6 +386,7 @@ footer
   padding: 52px 24px 48px;
   background: $sub;
   color: #fff;
+  position: relative;
 
   @include tab {
     padding: 40px 24px;
@@ -417,7 +421,7 @@ footer
     margin: 0 0 32px;
 
     @include tab {
-      margin: 0 0 24px;
+      margin: 24px 0 24px;
     }
   }
 
@@ -479,7 +483,6 @@ footer
     }
   }
 
-
   &__nav-link {
     display: inline-block;
     color: #fff;
@@ -500,6 +503,13 @@ footer
         left: -1em;
       }
     }
+  }
+
+  &__go-top {
+    position: absolute;
+    width: 50px;
+    top: 0;
+    right: 20px;
   }
 }
 

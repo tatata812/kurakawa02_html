@@ -7,3 +7,507 @@
 下層ページ共通
  ================================= */
 
+.sub-page {
+
+  &__top {
+    position: relative;
+  }
+
+  &__ttl {
+    position: absolute;
+    top: 55%;
+    left: 80px;
+    transform: translateY(-50%);
+
+    @include pc {
+      top: 60%;
+    }
+
+    @include tab {
+      top: 50%;
+      left: 12px;
+
+    }
+
+  }
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+
+/* =================================
+会社概要
+ ================================= */
+
+.page-overview {
+
+  &__ttl {
+    width: 240px;
+
+    @include pc {
+      width: 160px;
+    }
+
+    @include sp {
+      width: 100px;
+    }
+  }
+
+  &__lead {
+    background-color: $bg;
+    padding: 40px 16px;
+    position: relative;
+  }
+
+  &__lead-text {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  &__section {
+    position: relative;
+    overflow: hidden;
+
+    &:last-of-type {
+      margin: 0 0 60px;
+    }
+
+  }
+
+  &__section-bg {
+    background: linear-gradient(to right,
+        #fff 50%,
+        #f2f2f2 50%);
+    padding: 80px 16px;
+
+    @include tab {
+      padding: 40px 16px;
+      background: #fff;
+    }
+
+    &--reverse {
+      background: linear-gradient(to left,
+          #fff 50%,
+          #f2f2f2 50%);
+
+      @include tab {
+        background: $bg;
+      }
+    }
+  }
+
+  &__inner {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  &__section-ttl-wrap {
+    max-width: 880px;
+    margin: 0 auto;
+
+    &--reverse {
+      width: 50%;
+      margin: 0 0 0 auto;
+
+      @include tab {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__section-ttl {
+    border-left: 3px solid $main;
+    padding: 8px 0 4px 12px;
+    font-size: 24px;
+    color: #999999;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0 0 40px;
+
+    @include tab {
+      font-size: 20px;
+      margin: 0 0 24px;
+    }
+
+    &--reverse {
+      margin: 0 0 40px 40px;
+
+      @include tab {
+        margin: 0 0 24px;
+      }
+    }
+  }
+
+  &__section-img {
+    max-width: 720px;
+    margin: 0 0 40px;
+
+    @include tab {
+      margin: 0 auto 40px;
+    }
+
+    &--reverse {
+      margin: 0 0 40px auto;
+
+      @include tab {
+        margin: 0 auto 40px;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    gap: 100px;
+    max-width: 880px;
+    margin: 0 auto;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -170px;
+      right: 50%;
+      width: 100vw;
+      height: 450px;
+      background: $bg;
+      z-index: 0;
+
+      @include tab {
+        display: none;
+      }
+    }
+
+    @include tab {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    &--reverse {
+      flex-direction: row-reverse;
+
+      @include tab {
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      &::before {
+        left: 50%;
+
+        @include tab {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__content-lead {}
+
+  &__list-item {
+    margin: 0 0 60px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include tab {
+      margin: 0 0 24px;
+    }
+
+  }
+
+  &__list-head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0 0 20px;
+    font-size: 20px;
+
+    @include tab {
+      font-size: 18px;
+      margin: 0 0 12px;
+    }
+
+  }
+
+  &__list-num {
+    color: $main;
+    font-weight: 600;
+
+  }
+
+  &__list-title {
+    color: #9c9c9c;
+    font-weight: 600;
+
+  }
+
+
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+/* =================================
+
+ ================================= */
+
+.aaa {
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+/* =================================
+
+ ================================= */
+
+.aaa {
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+/* =================================
+
+ ================================= */
+
+.aaa {
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+/* =================================
+
+ ================================= */
+
+.aaa {
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+/* =================================
+
+ ================================= */
+
+.aaa {
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}

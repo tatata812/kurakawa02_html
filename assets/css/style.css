@@ -635,6 +635,235 @@
 /* =================================
 下層ページ共通
  ================================= */
+.sub-page__top {
+  position: relative;
+}
+.sub-page__ttl {
+  position: absolute;
+  top: 55%;
+  left: 80px;
+  transform: translateY(-50%);
+}
+@media (max-width: 1200px) {
+  .sub-page__ttl {
+    top: 60%;
+  }
+}
+@media (max-width: 820px) {
+  .sub-page__ttl {
+    top: 50%;
+    left: 12px;
+  }
+}
+/* =================================
+会社概要
+ ================================= */
+.page-overview__ttl {
+  width: 240px;
+}
+@media (max-width: 1200px) {
+  .page-overview__ttl {
+    width: 160px;
+  }
+}
+@media (max-width: 600px) {
+  .page-overview__ttl {
+    width: 100px;
+  }
+}
+.page-overview__lead {
+  background-color: #f2f2f2;
+  padding: 40px 16px;
+  position: relative;
+}
+.page-overview__lead-text {
+  max-width: 520px;
+  margin: 0 auto;
+}
+.page-overview__section {
+  position: relative;
+  overflow: hidden;
+}
+.page-overview__section:last-of-type {
+  margin: 0 0 60px;
+}
+.page-overview__section-bg {
+  background: linear-gradient(to right, #fff 50%, #f2f2f2 50%);
+  padding: 80px 16px;
+}
+@media (max-width: 820px) {
+  .page-overview__section-bg {
+    padding: 40px 16px;
+    background: #fff;
+  }
+}
+.page-overview__section-bg--reverse {
+  background: linear-gradient(to left, #fff 50%, #f2f2f2 50%);
+}
+@media (max-width: 820px) {
+  .page-overview__section-bg--reverse {
+    background: #f2f2f2;
+  }
+}
+.page-overview__inner {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.page-overview__section-ttl-wrap {
+  max-width: 880px;
+  margin: 0 auto;
+}
+.page-overview__section-ttl-wrap--reverse {
+  width: 50%;
+  margin: 0 0 0 auto;
+}
+@media (max-width: 820px) {
+  .page-overview__section-ttl-wrap--reverse {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.page-overview__section-ttl {
+  border-left: 3px solid #f15a24;
+  padding: 8px 0 4px 12px;
+  font-size: 24px;
+  color: #999999;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0 0 40px;
+}
+@media (max-width: 820px) {
+  .page-overview__section-ttl {
+    font-size: 20px;
+    margin: 0 0 24px;
+  }
+}
+.page-overview__section-ttl--reverse {
+  margin: 0 0 40px 40px;
+}
+@media (max-width: 820px) {
+  .page-overview__section-ttl--reverse {
+    margin: 0 0 24px;
+  }
+}
+.page-overview__section-img {
+  max-width: 720px;
+  margin: 0 0 40px;
+}
+@media (max-width: 820px) {
+  .page-overview__section-img {
+    margin: 0 auto 40px;
+  }
+}
+.page-overview__section-img--reverse {
+  margin: 0 0 40px auto;
+}
+@media (max-width: 820px) {
+  .page-overview__section-img--reverse {
+    margin: 0 auto 40px;
+  }
+}
+.page-overview__content {
+  display: flex;
+  gap: 100px;
+  max-width: 880px;
+  margin: 0 auto;
+  position: relative;
+}
+.page-overview__content::before {
+  content: "";
+  position: absolute;
+  bottom: -170px;
+  right: 50%;
+  width: 100vw;
+  height: 450px;
+  background: #f2f2f2;
+  z-index: 0;
+}
+@media (max-width: 820px) {
+  .page-overview__content::before {
+    display: none;
+  }
+}
+@media (max-width: 820px) {
+  .page-overview__content {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+.page-overview__content--reverse {
+  flex-direction: row-reverse;
+}
+@media (max-width: 820px) {
+  .page-overview__content--reverse {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+.page-overview__content--reverse::before {
+  left: 50%;
+}
+@media (max-width: 820px) {
+  .page-overview__content--reverse::before {
+    display: none;
+  }
+}
+.page-overview__list-item {
+  margin: 0 0 60px;
+}
+.page-overview__list-item:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 820px) {
+  .page-overview__list-item {
+    margin: 0 0 24px;
+  }
+}
+.page-overview__list-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0 0 20px;
+  font-size: 20px;
+}
+@media (max-width: 820px) {
+  .page-overview__list-head {
+    font-size: 18px;
+    margin: 0 0 12px;
+  }
+}
+.page-overview__list-num {
+  color: #f15a24;
+  font-weight: 600;
+}
+.page-overview__list-title {
+  color: #9c9c9c;
+  font-weight: 600;
+}
+/* =================================
+
+ ================================= */
+/* =================================
+
+ ================================= */
+/* =================================
+
+ ================================= */
+/* =================================
+
+ ================================= */
+/* =================================
+
+ ================================= */
+/* =================================
+
+ ================================= */
+/* =================================
+
+ ================================= */
+/* =================================
+
+ ================================= */
 /* サイト全体スタイルシート */
 /* =========================
    base（全ページ共通）
@@ -745,10 +974,13 @@ dt {
   background-color: #f2f2f2;
 }
 .breadcrumbs-wrap__content {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 12px 12px 0;
+  padding: 4px 12px 4px 40px;
   font-size: 11px;
+}
+@media (max-width: 820px) {
+  .breadcrumbs-wrap__content {
+    padding: 4px 12px;
+  }
 }
 
 /* =================================
@@ -973,6 +1205,7 @@ footer
   padding: 52px 24px 48px;
   background: #333333;
   color: #fff;
+  position: relative;
 }
 @media (max-width: 820px) {
   .site-footer {
@@ -1008,7 +1241,7 @@ footer
 }
 @media (max-width: 820px) {
   .site-footer__logo {
-    margin: 0 0 24px;
+    margin: 24px 0 24px;
   }
 }
 .site-footer__address {
@@ -1088,6 +1321,12 @@ footer
   position: absolute;
   top: 0;
   left: -1em;
+}
+.site-footer__go-top {
+  position: absolute;
+  width: 50px;
+  top: 0;
+  right: 20px;
 }
 
 /* =====================================================

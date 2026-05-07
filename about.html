@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="email=no,telephone=no,address=no">
+  <title>株式会社クロカワ</title>
+  <meta name="description" content="<?php echo $des; ?>">
+  <meta property="og:type" content="website">
+  <meta property="og:title"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta property="og:description" content="<?php echo $des; ?>">
+  <meta property="og:site_name"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/img/fb.jpg">
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta name="twitter:description" content="<?php echo $des; ?>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;800&family=Noto+Sans:wght@300;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" href="assets/css/html5reset-1.6.1.css">
+  <link rel="stylesheet" href="assets/css/style.css?20260121">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+
+<body class="wrap">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <!-- ロゴ -->
+      <h1 class="site-header__logo">
+        <a href="index.html"><img src="assets/img/top/header-logo.png" alt="株式会社クロカワ"></a>
+      </h1>
+
+      <!-- PC用ナビ -->
+      <nav class="site-header__nav">
+        <ul class="site-header__list">
+          <li class="site-header__list-item active"><a href="#">ホーム</a></li>
+          <li class="site-header__list-item"><a href="#">会社概要</a></li>
+          <li class="site-header__list-item"><a href="#">事業概要</a></li>
+          <li class="site-header__list-item"><a href="#">施工事例・サービス</a></li>
+          <li class="site-header__list-item"><a href="#">お問い合わせ</a></li>
+          <li class="site-header__list-item"><a href="#">新着情報</a></li>
+          <li class="site-header__list-item"><a href="#">採用情報</a></li>
+        </ul>
+      </nav>
+
+      <!-- ハンバーガー -->
+      <button class="site-header__menu-btn" type="button" aria-label="メニュー" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ▼ SP用 展開メニュー -->
+  <nav class="sp-menu" aria-hidden="true">
+    <div class="sp-menu__inner">
+      <ul class="sp-menu__list">
+        <li class="sp-menu__item"><a class="sp-menu__link" href="#">会社概要</a></li>
+        <li class="sp-menu__item"><a class="sp-menu__link" href="#">事業概要</a></li>
+        <li class="sp-menu__item"><a class="sp-menu__link" href="#">施工事例・サービス</a></li>
+        <li class="sp-menu__item"><a class="sp-menu__link" href="#">採用情報</a></li>
+        <li class="sp-menu__item"><a class="sp-menu__link" href="#">新着情報</a></li>
+        <li class="sp-menu__item"><a class="sp-menu__link" href="#">お問い合わせ</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="sp-menu__overlay" aria-hidden="true"></div>
+
+  <div class="main page-overview">
+
+
+  </div>
+  <!--main end-->
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__company">
+        <a href="index.html" class="site-footer__logo">
+          <img src="assets/img/top/logo.png" alt="株式会社クロカワ">
+        </a>
+
+        <address class="site-footer__address">
+          <p class="site-footer__postcode">〒740-0027</p>
+          <p class="site-footer__address-text">山口県岩国市中津町２丁目 12-11</p>
+        </address>
+        <p class="site-footer__copyright">©2026 KUROKAWA Co.,Ltd.All Rights Reserved.</p>
+      </div>
+
+      <nav class="site-footer__nav" aria-label="フッターナビゲーション">
+        <div class="site-footer__nav-column">
+          <ul class="site-footer__nav-list">
+            <li class="site-footer__nav-item"><a href="index.html" class="site-footer__nav-link">ホーム</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__nav-column">
+          <ul class="site-footer__nav-list">
+            <li class="site-footer__nav-item"><a href="" class="site-footer__nav-link">会社概要</a></li>
+            <li class="site-footer__nav-item"><a href=""
+                class="site-footer__nav-link site-footer__nav-link--child">代表挨拶</a></li>
+            <li class="site-footer__nav-item"><a href=""
+                class="site-footer__nav-link site-footer__nav-link--child">会社概要</a></li>
+            <li class="site-footer__nav-item"><a href=""
+                class="site-footer__nav-link site-footer__nav-link--child">沿革</a></li>
+            <li class="site-footer__nav-item"><a href=""
+                class="site-footer__nav-link site-footer__nav-link--child">アクセス</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__nav-column">
+          <ul class="site-footer__nav-list">
+            <li class="site-footer__nav-item"><a href="" class="site-footer__nav-link">事業概要</a></li>
+            <li class="site-footer__nav-item"><a href=""
+                class="site-footer__nav-link site-footer__nav-link--child">事業内容業務名 1</a></li>
+            <li class="site-footer__nav-item"><a href=""
+                class="site-footer__nav-link site-footer__nav-link--child">事業内容業務名 2</a></li>
+            <li class="site-footer__nav-item"><a href=""
+                class="site-footer__nav-link site-footer__nav-link--child">事業内容業務名 3</a></li>
+            <li class="site-footer__nav-item"><a href=""
+                class="site-footer__nav-link site-footer__nav-link--child">事業内容業務名 4</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__nav-column">
+          <ul class="site-footer__nav-list">
+            <li class="site-footer__nav-item"><a href="" class="site-footer__nav-link">施工実績・サービス</a></li>
+            <li class="site-footer__nav-item"><a href="" class="site-footer__nav-link">お問い合わせ</a></li>
+            <li class="site-footer__nav-item"><a href="" class="site-footer__nav-link">新着情報</a></li>
+            <li class="site-footer__nav-item"><a href="" class="site-footer__nav-link">採用情報</a></li>
+            <li class="site-footer__nav-item"><a href="" class="site-footer__nav-link">サイトマップ</a></li>
+            <li class="site-footer__nav-item"><a href="" class="site-footer__nav-link">個人情報保護方針</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p class="site-footer__copyright-sp">©2026 KUROKAWA Co.,Ltd.All Rights Reserved.</p>
+      <a href="#" class="site-footer__go-top"><img src="assets/img/top/go-top.png"></a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
