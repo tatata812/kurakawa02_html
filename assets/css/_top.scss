@@ -27,7 +27,6 @@
 }
 
 
-
 .top-section-ttl {
   text-align: center;
   font-family: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", sans-serif;
@@ -51,7 +50,6 @@
       font-size: 20px;
     }
   }
-
 }
 
 .section-deco-bottom {
@@ -75,7 +73,6 @@
 
 .main-visual {
   position: relative;
-
 
   &__text-wrap {
     position: absolute;
@@ -116,10 +113,6 @@
       font-size: 14px;
     }
   }
-
-  &__img {}
-
-  &__ {}
 }
 
 /* =================================
@@ -139,7 +132,6 @@
     @include tab {
       padding: 40px 24px 60px;
     }
-
   }
 
   &__flex {
@@ -167,7 +159,6 @@
     @include tab {
       margin: 0 0 32px;
       max-width: 200px;
-
     }
   }
 
@@ -207,7 +198,6 @@
       padding: 0;
       gap: 24px;
       align-items: center;
-
     }
   }
 
@@ -267,9 +257,6 @@
   &__card:hover &__card-arrow::after {
     transform: translateX(0);
   }
-
-
-
 }
 
 /* =================================
@@ -289,7 +276,6 @@
     @include tab {
       padding: 40px 24px 80px;
     }
-
   }
 
   &__ttl-wrap {
@@ -300,7 +286,6 @@
       flex-direction: column;
       gap: 24px;
       margin: 0 0 60px;
-
     }
   }
 
@@ -387,31 +372,10 @@
     display: block;
     margin: 0 0 0 auto;
 
-
     @include tab {
       margin: 0 auto;
     }
   }
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
 }
 
 /* =================================
@@ -431,7 +395,6 @@
     @include tab {
       padding: 40px 24px 80px;
     }
-
   }
 
   &__ttl-wrap {
@@ -442,7 +405,6 @@
       flex-direction: column;
       gap: 24px;
       margin: 0 0 60px;
-
     }
   }
 
@@ -493,8 +455,6 @@
       margin: 0 auto;
     }
   }
-
-
 }
 
 /* =================================
@@ -554,36 +514,6 @@
       max-width: 240px;
     }
   }
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
 }
 
 /* =================================
@@ -601,7 +531,6 @@
         #fff 100%,
         #f2f2f2 100%);
   }
-
 
   &__inner {
     background: linear-gradient(to right,
@@ -635,7 +564,6 @@
     @include tab {
       width: 100px;
       margin: 0;
-
     }
   }
 
@@ -662,32 +590,6 @@
   &__right {
     flex: 1;
   }
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
 }
 
 /* =================================
@@ -769,9 +671,4 @@
     margin: 0 auto;
     }
   }
-
-  &__ {}
-
-  &__ {}
-
 }
