@@ -28,7 +28,21 @@
     }
   }
 
-  &__ {}
+  &__content {
+    background-color: $bg;
+    position: relative;
+  }
+
+  &__inner {
+    background-color: #fff;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 80px 40px 100px;
+
+    @include tab {
+      padding: 40px 24px 60px;
+    }
+  }
 
   &__ {}
 
@@ -592,7 +606,7 @@
   &__inner {
     background-color: #fff;
     max-width: 980px;
-    margin: 24px auto 0;
+    margin: 0 auto 0;
     padding: 120px 120px 100px;
 
     @include tab {
@@ -617,51 +631,68 @@
   &__content {
     margin: 0 0 80px;
 
+    @include tab {
+      margin: 0 0 48px;
+    }
+  }
+
+  &__single-ttl {
+    font-size: 26px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid $main;
+    line-height: 1.4;
+
+    @include tab {
+      font-size: 18px;
+    }
+  }
+
+  &__date {
+    display: block;
+    text-align: right;
+    margin: 0 8px 80px 0;
+
     @include tab{
-    margin: 0 0 48px;
+    margin: 0 8px 40px 0;
     }
   }
 }
 
 /* =================================
-
+サイトマップ
  ================================= */
 
-.aaa {
+.page-sitemap {
 
-  &__ {}
+  &__ttl {
+    width: 140px;
 
-  &__ {}
+    @include pc {
+      width: 100px;
+    }
 
-  &__ {}
+    @include sp {
+      width: 60px;
+    }
+  }
 
-  &__ {}
+}
 
-  &__ {}
+/* =================================
+個人情報保護方針
+ ================================= */
 
-  &__ {}
+.page-privacy {
 
-  &__ {}
+  &__ttl {
+    width: 140px;
 
-  &__ {}
+    @include pc {
+      width: 100px;
+    }
 
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
+    @include sp {
+      width: 60px;
+    }
+  }
 }

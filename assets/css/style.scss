@@ -695,14 +695,15 @@ footer
   }
 
   h2 {
-    font-size: 22px;
-    margin: 56px 0 16px;
-    padding-bottom: 8px;
-    border-bottom: 2px solid $main;
-    line-height: 1.4;
+    margin: 48px 0 20px;
+    padding-left: 12px;
+    border-left: 3px solid $main;
+    line-height: 1.6;
+    font-weight: 700;
+    font-size: 20px;
 
     @include tab {
-      font-size: 18px;
+      font-size: 16px;
     }
   }
 
@@ -755,15 +756,18 @@ footer
     padding: 0;
   }
 
+  ul li {
+    list-style: disc;
+  }
+
+  ol li {
+    list-style: decimal;
+  }
+
   li {
     margin-bottom: 8px;
   }
 
-  ul ul,
-  ol ol {
-    margin-top: 8px;
-    margin-bottom: 0;
-  }
 
   /* --------------------
     引用
@@ -1030,8 +1034,8 @@ footer
     &--sub {
       margin: 0 0 24px;
 
-      @include sp{
-      margin: 0 0 20px;
+      @include sp {
+        margin: 0 0 20px;
       }
     }
   }
@@ -1052,8 +1056,8 @@ footer
     background-color: #fff;
     font-size: 14px;
 
-    @include sp{
-    padding: 0 8px;
+    @include sp {
+      padding: 0 8px;
     }
   }
 
