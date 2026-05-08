@@ -665,14 +665,14 @@
 .page-sitemap {
 
   &__ttl {
-    width: 140px;
+    width: 220px;
 
     @include pc {
-      width: 100px;
+      width: 160px;
     }
 
     @include sp {
-      width: 60px;
+      width: 100px;
     }
   }
 
@@ -685,14 +685,14 @@
 .page-privacy {
 
   &__ttl {
-    width: 140px;
+    width: 360px;
 
     @include pc {
-      width: 100px;
+      width: 220px;
     }
 
     @include sp {
-      width: 60px;
+      width: 160px;
     }
   }
 }

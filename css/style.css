@@ -1224,16 +1224,16 @@
 サイトマップ
  ================================= */
 .page-sitemap__ttl {
-  width: 140px;
+  width: 220px;
 }
 @media (max-width: 1200px) {
   .page-sitemap__ttl {
-    width: 100px;
+    width: 160px;
   }
 }
 @media (max-width: 600px) {
   .page-sitemap__ttl {
-    width: 60px;
+    width: 100px;
   }
 }
 
@@ -1241,16 +1241,16 @@
 個人情報保護方針
  ================================= */
 .page-privacy__ttl {
-  width: 140px;
+  width: 360px;
 }
 @media (max-width: 1200px) {
   .page-privacy__ttl {
-    width: 100px;
+    width: 220px;
   }
 }
 @media (max-width: 600px) {
   .page-privacy__ttl {
-    width: 60px;
+    width: 160px;
   }
 }
 
