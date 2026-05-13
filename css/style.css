@@ -1285,13 +1285,11 @@
   background: #fff;
 }
 @media (max-width: 600px) {
-  .page-recruit__table {
-    font-size: 13px;
-  }
   .page-recruit__table th,
   .page-recruit__table td {
     padding: 8px;
     line-height: 1.7;
+    font-size: 13px;
   }
   .page-recruit__table th {
     width: 110px;

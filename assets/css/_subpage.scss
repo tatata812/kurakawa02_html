@@ -733,12 +733,12 @@
 
 
     @include sp {
-      font-size: 13px;
 
       th,
       td {
         padding: 8px;
         line-height: 1.7;
+        font-size: 13px;
       }
 
       th {
