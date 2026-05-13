@@ -595,27 +595,24 @@
   &__content {
     display: flex;
     flex-direction: row-reverse;
-    gap: 100px;
+    gap: 24px;
     max-width: 880px;
     margin: 0 auto;
     position: relative;
+    justify-content: flex-end;
 
     @include pc {
-      gap: 60px;
+      gap: 40px;
     }
 
     @include tab {
       flex-direction: column;
-      gap: 40px;
+      gap: 24px;
     }
   }
 
   &__content-lead {
-    width: calc((100% - 100px) / 2);
-
-    @include pc {
-      width: calc((100% - 60px) / 2);
-    }
+    flex: 1;
 
     @include tab {
       width: 100%;
@@ -635,10 +632,10 @@
   }
 
   &__message-images {
-    width: calc((100% - 100px) / 2);
+    width: 55%;
 
     @include pc {
-      width: calc((100% - 60px) / 2);
+      width: calc((100% - 40px) / 2);
     }
 
     @include tab {
@@ -1340,8 +1337,8 @@
     text-align: right;
     margin: 0 8px 80px 0;
 
-    @include tab{
-    margin: 0 8px 40px 0;
+    @include tab {
+      margin: 0 8px 40px 0;
     }
   }
 }
