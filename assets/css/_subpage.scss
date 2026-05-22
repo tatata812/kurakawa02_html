@@ -456,9 +456,33 @@
     }
   }
 
+  &__map-ttl {
+    font-size: 17px;
+    margin: 0 0 4px 12px;
+
+    @include tab{
+    font-size: 15px;
+        margin: 0 0 4px 8px;
+
+    }
+
+  }
+
+  &__map-text {
+    margin: 0 0 12px 12px;
+
+    @include tab{
+    margin: 0 0 12px 8px;
+    }
+  }
+
   &__access-map-wrap {
     max-width: 960px;
-    margin: 0 auto;
+    margin: 0 auto 80px;
+
+    @include tab{
+    margin: 0 auto 60px;
+    }
   }
 
   &__access-map {

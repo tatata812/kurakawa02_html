@@ -463,9 +463,9 @@
 
 .top-contact {
   position: relative;
-  background: linear-gradient(to left,
-      #fff 40%,
-      #f2f2f2 40%);
+  background: linear-gradient(to right,
+      #fff 60%,
+      #f2f2f2 60%);
 
 
   &__inner {
@@ -522,7 +522,7 @@
 
 .top-news {
   position: relative;
-  background: linear-gradient(to right,
+  background: linear-gradient(to left,
       #fff 50%,
       #f2f2f2 50%);
 
@@ -533,14 +533,15 @@
   }
 
   &__inner {
-    background: linear-gradient(to right,
-        #fff 33%,
-        #f2f2f2 33%);
+    background: linear-gradient(to left,
+        #fff 67%,
+        #f2f2f2 67%);
     max-width: 980px;
     margin: 0 auto;
     padding: 80px 40px 100px;
     display: flex;
     gap: 40px;
+
 
     @include tab {
       gap: 24px;
