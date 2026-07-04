@@ -127,6 +127,88 @@ $(function () {
       }
     });
   });
-
-
 })
+
+// GSAP
+gsap.registerPlugin(ScrollTrigger);
+
+/* 00 Hero：画像ズームアウト＋タイトル表示 */
+gsap.fromTo(".hero-bg-gs img", {
+  scale: 1.25
+}, {
+  scale: 1,
+  duration: 2,
+  ease: "power3.out"
+});
+
+gsap.from(".hero-label-gs, .hero-title-gs, .hero-text-gs", {
+  y: 50,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.18,
+  ease: "power3.out"
+});
+
+/* Clip Reveal：画像が横から開く */
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray(".clip-reveal-gs").forEach((el) => {
+  const img = el.querySelector("img");
+
+  gsap.fromTo(el,
+    {
+      clipPath: "inset(0 100% 0 0)"
+    },
+    {
+      clipPath: "inset(0 0% 0 0)",
+      duration: 1.1,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: el,
+        start: "top 78%",
+      }
+    }
+  );
+
+  gsap.fromTo(img,
+    {
+      scale: 1.25
+    },
+    {
+      scale: 1,
+      duration: 1.1,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: el,
+        start: "top 78%",
+      }
+    }
+  );
+});
+
+/* Fade Up：スクロールで下からふわっと */
+gsap.utils.toArray(".fade-up-gs").forEach((el) => {
+  gsap.from(el, {
+    y: 12,
+    opacity: 0,
+    duration: 1,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: el,
+      start: "top 95%"
+    }
+  });
+});
+
+/* Fade in：ふわっと */
+gsap.utils.toArray(".fade-in-gs").forEach((el) => {
+  gsap.from(el, {
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: el,
+      start: "top 80%"
+    }
+  });
+});
