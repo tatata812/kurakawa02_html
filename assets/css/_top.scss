@@ -289,7 +289,7 @@
     }
   }
 
-  &__ttl-right {
+  &__ttl-left {
     width: 40%;
 
     @include tab {
@@ -305,8 +305,16 @@
     }
   }
 
-  &__ttl-text {
+  &__ttl-right {
     flex: 1;
+  }
+
+  &__ttl-text {
+    margin: 0 0 24px;
+
+    @include tab {
+      margin: 0 0 12px;
+    }
   }
 
   &__content {
@@ -326,16 +334,32 @@
       flex-direction: column-reverse;
     }
 
-    &--top {
-      transform: translateX(-120px);
+    &--1st {
+      transform: translateX(-160px);
 
       @include pc {
         transform: translateX(0);
       }
     }
 
-    &--bottom {
-      transform: translateX(120px);
+    &--2nd {
+      transform: translateX(-60px);
+
+      @include pc {
+        transform: translateX(0);
+      }
+    }
+
+    &--3rd {
+      transform: translateX(60px);
+
+      @include pc {
+        transform: translateX(0);
+      }
+    }
+
+    &--4th {
+      transform: translateX(160px);
 
       @include pc {
         transform: translateX(0);
@@ -601,8 +625,8 @@
   background: $bg;
   padding: 60px 0 100px;
 
-  @include tab{
-  padding: 40px 0;
+  @include tab {
+    padding: 40px 0;
   }
 
 
@@ -610,8 +634,7 @@
     max-width: 980px;
     margin: 0 auto;
 
-    @include tab {
-    }
+    @include tab {}
   }
 
   &__ttl {
@@ -621,7 +644,7 @@
 
     @include tab {
       width: 160px;
-    margin: 0 0 40px;
+      margin: 0 0 40px;
     }
   }
 
@@ -629,9 +652,9 @@
     background-color: $sub;
     display: flex;
 
-    @include sp{
-    flex-direction: column;
-    margin: 0 0 40px;
+    @include sp {
+      flex-direction: column;
+      margin: 0 0 40px;
     }
   }
 
@@ -641,9 +664,9 @@
     position: relative;
     width: 600px;
 
-    @include sp{
-    height: 100px;
-    width: 100%;
+    @include sp {
+      height: 100px;
+      width: 100%;
     }
   }
 
@@ -658,18 +681,18 @@
 
   &__btn {
 
-    @include sp{
-    display: none;
+    @include sp {
+      display: none;
     }
   }
 
   &__btn-sp {
     display: none;
 
-    @include sp{
-    display: block;
-    max-width: 240px;
-    margin: 0 auto;
+    @include sp {
+      display: block;
+      max-width: 240px;
+      margin: 0 auto;
     }
   }
 }
