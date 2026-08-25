@@ -1007,27 +1007,13 @@
     line-height: 1.3;
   }
 }
-.page-about__section-img-left {
-  flex: 1;
-  min-width: 0;
-  transform: translate(-70px, 50px) scale(1.2);
-}
-.page-about__section-img-left img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-@media (max-width: 1200px) {
-  .page-about__section-img-left {
-    transform: none;
-  }
+.page-about__message {
+  max-width: 780px;
+  margin: 0 auto;
 }
 @media (max-width: 820px) {
-  .page-about__section-img-left {
+  .page-about__message {
     width: 100%;
-    max-width: 600px;
-    margin: 0 auto 40px;
-    transform: none;
   }
 }
 .page-about {
