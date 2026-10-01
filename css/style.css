@@ -87,16 +87,16 @@
 }
 .main-visual__text-top {
   font-weight: 900;
-  font-size: 60px;
+  font-size: 48px;
 }
 @media (max-width: 1200px) {
   .main-visual__text-top {
-    font-size: 46px;
+    font-size: 32px;
   }
 }
 @media (max-width: 820px) {
   .main-visual__text-top {
-    font-size: 32px;
+    font-size: 28px;
   }
 }
 @media (max-width: 600px) {

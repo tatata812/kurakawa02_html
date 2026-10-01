@@ -86,14 +86,14 @@
 
   &__text-top {
     font-weight: 900;
-    font-size: 60px;
+    font-size: 48px;
 
     @include pc {
-      font-size: 46px;
+      font-size: 32px;
     }
 
     @include tab {
-      font-size: 32px;
+      font-size: 28px;
     }
 
     @include sp {
